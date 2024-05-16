@@ -21,7 +21,7 @@ public class UniqueDecimalCount {
         // 即从那个数字开始的情况，然后由于空字符串加任何数字，在转换成十进制的时候还会是改数字本身
         Set<String> currentSubsequences = new HashSet<>();
         currentSubsequences.add("");
-
+        // 创建一个currentSubsequences和newSubsequences的原因是，不能一边遍历一边修改一个list
         for (char c : binary.toCharArray()) {
             Set<String> newSubsequences = new HashSet<>();
             // 为每个已存在的子序列添加当前字符
