@@ -11,7 +11,7 @@ public class test {
     private static HashMap<String, String> hMap1 = new HashMap<String, String>();
 
     public static void main(String[] args) throws ParseException {
-        List<record> r = createList();
+        List<Record> r = createList();
 
         System.out.println("result :" + removeDuplicate(r));
         System.out.println(r.size());
@@ -27,26 +27,26 @@ public class test {
 
 
 
-    public static List<record> createList() throws ParseException {
-        List<record> records = new ArrayList<record>();
+    public static List<Record> createList() throws ParseException {
+        List<Record> records = new ArrayList<Record>();
         SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd");
         String input = "1818-11-11";
         Date d1 = ft.parse(input);
 
-        records.add(new record("1",d1,"value1"));
-        records.add(new record("2",d1,"value2"));
-        records.add(new record("1",d1,"value3"));
+        records.add(new Record("1",d1,"value1"));
+        records.add(new Record("2",d1,"value2"));
+        records.add(new Record("1",d1,"value3"));
         System.out.println("createList :" + records);
         return records;
     }
-    public static List<record> removeDuplicate(List<record> records){
-        Map<String,record> maps = new LinkedHashMap<>();
-        for(record record : records){
+    public static List<Record> removeDuplicate(List<Record> records){
+        Map<String,Record> maps = new LinkedHashMap<>();
+        for(Record record : records){
             maps.put(record.getID()+record.getDate().toString(),record);
             System.out.println("create map :" + maps);
         }
         System.out.println("map :" + maps);
-        List <record> result = new ArrayList<record>(maps.values());
+        List <Record> result = new ArrayList<Record>(maps.values());
         return result;
     }
 }

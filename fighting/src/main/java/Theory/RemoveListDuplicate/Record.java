@@ -2,7 +2,7 @@ package Theory.RemoveListDuplicate;
 
 import java.util.Date;
 
-public class record {
+public class Record {
     private String ID;
     private Date date;
     private String value;
@@ -40,7 +40,7 @@ public class record {
         this.value = value;
     }
 
-    public record(String ID, Date date, String value) {
+    public Record(String ID, Date date, String value) {
 
         this.ID = ID;
         this.date = date;

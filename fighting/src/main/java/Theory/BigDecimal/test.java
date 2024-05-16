@@ -1,7 +1,5 @@
 package Theory.BigDecimal;
 
-import sun.swing.BakedArrayList;
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;

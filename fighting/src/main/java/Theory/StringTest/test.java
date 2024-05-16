@@ -1,7 +1,5 @@
 package Theory.StringTest;
 
-import sun.misc.Cleaner;
-
 import java.nio.ByteBuffer;
 
 public class test {

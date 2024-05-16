@@ -1,9 +1,7 @@
 package Theory.GenericTest;
 
-import com.sun.org.apache.bcel.internal.generic.NEW;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public class DemoTestGeneric {
     public static void main(String[] args) {

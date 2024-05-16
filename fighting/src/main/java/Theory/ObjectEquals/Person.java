@@ -1,7 +1,5 @@
 package Theory.ObjectEquals;
 
-import com.sun.org.apache.xpath.internal.operations.Equals;
-
 public class Person {
     private String name;
     private int age;

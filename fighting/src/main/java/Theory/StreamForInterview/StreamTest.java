@@ -1,7 +1,5 @@
 package Theory.StreamForInterview;
 
-import com.sun.org.apache.xpath.internal.objects.XNumber;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.OptionalDouble;
