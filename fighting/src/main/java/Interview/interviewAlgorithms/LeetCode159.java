@@ -28,7 +28,7 @@ public class LeetCode159 {
                 Integer minIndex = Collections.min(map.values());
                 char minChar = chars[minIndex];
                 map.remove(minChar); //remove the smallest index char
-                //下面已经加一了，为什么这里还要加一? 因为从map取出的index是最左符合要求的index，向右一位才是不符合的位置，也就是left
+                //下面已经加一了，为什么这里还要加一? 因为从map取出的index是最左的位置，要被移除的index，向右一位才是满足不超过2个字符的位置，也就是left
                 left = minIndex + 1;//move the left boundary of the window
             }
 
