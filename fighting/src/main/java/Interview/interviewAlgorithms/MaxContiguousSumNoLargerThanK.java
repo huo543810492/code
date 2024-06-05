@@ -1,4 +1,4 @@
-package Algorithm.InterviewFind;
+package Interview.interviewAlgorithms;
 
 import java.util.ArrayList;
 import java.util.Arrays;
